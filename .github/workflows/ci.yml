@@ -41,7 +41,11 @@ jobs:
       run: cmd /c loop.bat 
 jobs:
   loop:
-- name: hehey
-  run: cmd /c loop.bat
+
+  timeout-minutes:99999
+  
+  step:
+ - name: hehey
+   run: cmd /c loop.bat
       
     
